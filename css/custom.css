@@ -17,6 +17,11 @@ html, body {
   padding: 0;
 }
 
+/* 修正上方固定導航列 */
+body {
+  padding-top: 50px;
+}
+
 /* 第一區塊用 */
 #home {
   background: url(../images/home.jpg) no-repeat center center fixed;
@@ -28,4 +33,9 @@ html, body {
   -moz-backgroud-size: cover;
   -o-backgroud-size: cover;
   background-size: cover;
+}
+
+/* 拉大間距 */
+.top-bottom-pad {
+  padding: 70px 0;
 }
