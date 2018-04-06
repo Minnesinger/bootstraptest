@@ -2,6 +2,18 @@ html, body {
   height: 100%;
   width: 100%;
 }
+
+.tagline-upper {
+  font-size: 5rem;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.tagline-lower {
+  font-size: 1.2rem;
+  line-height: 1;
+}
+
 /* 文字垂直置中 */
 .text-vcenter {
   display: table-cell;
@@ -15,6 +27,29 @@ html, body {
   font-weight: 700;
   margin: 0;
   padding: 0;
+}
+
+/* dynamic-nav */
+
+  a:hover {
+    background-color:yellow;
+    color: inherit;
+    opacity: .66;
+    text-decoration: none;
+    padding-bottom: 6px;
+    transition: all .2s;
+    &.nav-active {
+      opacity: 1;
+    }
+  }
+
+.underline {
+  position: absolute;
+	bottom: 30px;
+	left: 0;
+	width: 100px;
+	height: 2px;
+	background: #EE7474;
 }
 
 /* 第一區塊用 */
@@ -32,7 +67,7 @@ html, body {
 
 /* 拉大間距 */
 .top-bottom-pad {
-  padding: 70px 0;
+  padding: 120px 0;
 }
 
 /* 背景顏色與字的顏色*/

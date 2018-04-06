@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>My Page</title>
+
   <!-- bootstrap的css樣式 -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <!-- 自訂的css樣式 -->
@@ -14,53 +14,64 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Josefin+Slab:100,300,400,600,700,100italic,300italic,400italic,600italic,700italic" rel="stylesheet" type="text/css">
 
-  <!-- 自訂的js程式碼檔案 -->
-  <script src="js/custom.js"></script>
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-  <script src="https://github.com/cferdinandi/smooth-scroll/blob/master/dist/js/smooth-scroll.js"></script>
-
   <!-- SMOOTH SCROLL -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  <script>
+  $(function() {
+    $('a[href*=\\#]:not([href=\\#])').click(function() {
+      if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+        var target = $(this.hash);
+        target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+        if (target.length) {
+          $('html,body').animate({
+            scrollTop: target.offset().top
+          }, 1000);
+          return false;
+        }
+      }
+    });
+  });
+    </script>
   <!-- End of SMOOTH SCROLL -->
 </head>
 <body>
-  <div class="tagline-upper text-center text-heading text-shadow text-white mt-5 d-none d-lg-block">佳澄地政士(代書)事務所</div>
-  <div class="tagline-lower text-center text-expanded text-shadow text-uppercase text-white mb-5 d-none d-lg-block">3481 Melrose Place | Beverly Hills, CA 90210 | 123.456.7890</div>
 
   <!-- Navigation -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-faded py-lg-4">
+  <nav class="navbar navbar-expand-lg navbar-light bg-faded py-lg-4 fixed-top" style=" background-color: rgba(255, 255, 255);" >
     <div class="container">
-      <a class="navbar-brand text-uppercase text-expanded font-weight-bold d-lg-none" href="#">佳澄 地政士事務所</a>
+
+      <a class="navbar-brand text-uppercase text-expanded font-weight-bold d-lg-none" href="#">
+            <img src="images/logo.png" width="30" height="30" class="d-inline-block align-top" alt="">佳澄地政士事務所</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarResponsive">
-        <ul class="navbar-nav mx-auto">
+        <ul class="navbar-nav mx-auto" style="list-style: none;">
           <li class="nav-item active px-lg-4">
-            <a class="nav-link text-uppercase text-expanded" href="#about">公司資訊
-              <span class="sr-only">(current)</span>
+            <a class="nav-link text-uppercase text-expanded nav-color nav-active" href="#about">公司資訊
+
             </a>
           </li>
           <li class="nav-item px-lg-4">
-            <a class="nav-link text-uppercase text-expanded" href="about.html">服務項目</a>
+            <a class="nav-link text-uppercase text-expanded nav-color" href="#services">服務項目</a>
           </li>
           <li class="nav-item px-lg-4">
-            <a class="nav-link text-uppercase text-expanded" href="blog.html">應備文件</a>
+            <a class="nav-link text-uppercase text-expanded nav-color" href="#contact">應備文件</a>
           </li>
         </ul>
+        <!--underline function
+        <div class="underline"></div>
+      -->
       </div>
     </div>
   </nav>
 
   <!-- 第一區塊首頁 -->
   <div id="home" class="home">
-    <div class="text-vcenter">
+    <div class="text-vcenter tab-pane fade in active">
       <h1>歡迎</h1>
       <h3>這是一個使用bootstrap製作的網頁</h3>
-      <a href="#about" class="btn btn-default btn-ln">關於我們</a>
     </div>
   </div>
   <!-- 第一個區塊 -->
@@ -164,4 +175,53 @@
 <!-- 回到上方的連結 -->
 
 </body>
+
+<!--underline-->
+<script>
+  var getPosition = function(){
+    var currentLink = $(".nav-color.nav-active");
+    var position = currentLink.position();
+    var width = currentLink.width();
+    $(".underline").css("left" , position.left + 7 + "px");
+    $(".underline").css("width" , width + "px");
+  };
+
+  getPosition();
+
+  $(window).resize(function(){ getPosition(); });
+
+  $(document).on("scroll", onScroll);
+
+  function onScroll(event){
+
+    var scrollPosition = $(document).scrollTop();
+
+    $(".nav-color").each(function () {
+      var currentLink = $(this);
+      var refElement = $(currentLink.attr("href"));
+      var siblings = currentLink.closest("li").siblings();
+      var targetOffset = refElement.offset().top - 70;
+      if (scrollPosition >= targetOffset) {
+        currentLink.addClass("nav-active");
+        siblings.find(".nav-color").removeClass("nav-active");
+      }
+    });
+    getPosition();
+  }
+
+  $(function() {
+    var speed = 800;
+    var topOffset = 0;
+    $("body").on("click", ".nav-color", function (event) {
+      var amountToScroll = ( $(this.hash).offset().top ) - topOffset;
+      event.preventDefault();
+      $("html, body").animate( {scrollTop: amountToScroll }, speed );
+      currentLink.addClass("nav-active");
+      siblings.find(".nav-color").removeClass("nav-active");
+    });
+  });
+</script>
+
+<!--navbar color change-->
+
 </html>
