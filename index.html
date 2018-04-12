@@ -10,44 +10,48 @@
   <!-- 自訂的css樣式 -->
   <link href="css/custom.css" rel="stylesheet">
 
-  <!-- Custom fonts for this template -->
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Josefin+Slab:100,300,400,600,700,100italic,300italic,400italic,600italic,700italic" rel="stylesheet" type="text/css">
 
-  <!-- SMOOTH SCROLL -->
+  <!-- Custom fonts for this template -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Josefin+Slab:100,300,400,600,700,100italic,300italic,400italic,600italic,700italic" rel="stylesheet" type="text/css">
+
+  <!-- js -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-<!-- -->
-  <!-- End of SMOOTH SCROLL -->
+
+  <!-- custom js -->
+  <script src="js/custom.js"></script>
+
 </head>
-<body>
+<body >
 
   <!-- Navigation -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-faded py-lg-4 fixed-top" style=" background-color: rgba(255, 255, 255);" >
+  <nav class="navbar navbar-expand-lg navbar-light bg-faded py-lg-4 fixed-top" style=" background-color: rgba(255, 255, 255, 0.9);">
     <div class="container">
-
-      <a class="navbar-brand text-uppercase text-expanded font-weight-bold d-lg-none" href="#">
-            <img src="images/logo.png" width="30" height="30" class="d-inline-block align-top" alt="">佳澄地政士事務所</a>
+      <a class="navbar-brand text-uppercase text-expanded font-weight-bold" href="#">
+        <img src="images/logo.png" width="50" height="50" class="d-inline-block" alt="">佳澄地政士事務所</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarResponsive">
-        <ul class="navbar-nav mx-auto" style="list-style: none;">
+        <ul class="navbar navbar-nav mx-auto" style="list-style: none;">
           <li class="nav-item active px-lg-4">
-            <a class="nav-link text-uppercase text-expanded nav-color nav-active" href="#about">公司資訊
-
+            <a class="nav-link text-uppercase text-expanded" href="#about">公司資訊
             </a>
           </li>
           <li class="nav-item px-lg-4">
-            <a class="nav-link text-uppercase text-expanded nav-color" href="#services">服務項目</a>
+            <a class="nav-link text-uppercase text-expanded" href="#services">服務項目</a>
           </li>
           <li class="nav-item px-lg-4">
-            <a class="nav-link text-uppercase text-expanded nav-color" href="#contact">應備文件</a>
+            <a class="nav-link text-uppercase text-expanded" href="#info">應備文件</a>
+          </li>
+          <li class="nav-item px-lg-4">
+            <a class="nav-link text-uppercase text-expanded" href="#contact">聯絡我們</a>
           </li>
         </ul>
         <!--underline function
         <div class="underline"></div>
-      -->
+        -->
       </div>
     </div>
   </nav>
@@ -55,8 +59,8 @@
   <!-- 第一區塊首頁 -->
   <div id="home" class="home">
     <div class="text-vcenter tab-pane fade in active">
-      <h1>歡迎</h1>
-      <h3>這是一個使用bootstrap製作的網頁</h3>
+      <h1>佳澄地政士(代書)事務所</h1>
+      <h3>台北市地政士</h3>
     </div>
   </div>
   <!-- 第一個區塊 -->
@@ -64,43 +68,64 @@
   <!-- 第2個區塊 - 關於我們 -->
 <div id="about" class="top-bottom-pad">
   <div class="container">
-    <div class="row">
-      <div class="col-sm-6">
-        <img src="images/joomla_logo.png" alt="" />
-      </div>
-      <div class="col-sm-6 text-center">
-        <h2>關於我們</h2>
-        <p class="lead">我們提供在Joomla!這套相當知名的內容管理系統（Content Management System, CMS），相關的專業網頁建置服務、網頁程式撰寫與網路行銷等服務。</p>
+      <div style="background-color: rgba(255, 255, 255, 0.9);" class="p-4 my-4">
+        <hr class="divider">
+        <h2 class="text-center text-lg text-uppercase my-0">關於
+          <strong>我們</strong>
+        </h2>
+        <hr class="divider">
+        <div class="row">
+          <div class="col-sm-6">
+              <img src="images/archi2.jpg" width="100%" height="100%" class="d-inline-block" alt="" />
+          </div>
+          <div class="col-sm-6 text-left">
+            <h2>代書（或是土地代書、地政士、土地登記專業代理人）：</h2>
+            <p class="lead">
+              日治時期凡從事房地產之買賣、登記相關業務者，稱為「司法書士」或「行政書士」，1989年（民國78年）《土地法》修正時將其命名為「土地登記專業代理人」，2001年（民國90年）10月通過《地政士法》（以及施行細則）後改稱為「地政士」。主要的工作是代辦土地和不動產交易的法律文件申請及相關服務。
+            </p>
+          </div>
+        </div>
       </div>
     </div>
   </div>
-</div>
 <!-- 第2個區塊 -->
 
 <!-- 第3區塊 - 產品服務 -->
 <div id="services" class="top-bottom-pad">
   <div class="container">
-    <h2 class="text-center">產品服務</h2> <hr />
+    <h2 class="text-center">服務項目</h2> <hr />
     <div class="row text-center">
       <div class="col-sm-3 col-xs-6">
-        <i class="glyphicon glyphicon-cloud"> </i>
-        <h4>購物車服務</h4>
-        <p>這是一段範例的文字，裡面可以填上你想要的內容。這是一段範例的文字，裡面可以填上你想要的內容。</p>
+        <div class="view overlay">
+          <img src="https://mdbootstrap.com/img/Photos/Others/forest-sm.jpg" class="img-fluid " alt="smaple image">
+          <div class="mask flex-center rgba-red-strong">
+              <p class="white-text">Strong overlay</p>
+          </div>
+        </div>
       </div>
       <div class="col-sm-3 col-xs-6">
-        <i class="glyphicon glyphicon-leaf"> </i>
-        <h4>Android手機App開發</h4>
-        <p>這是一段範例的文字，裡面可以填上你想要的內容。這是一段範例的文字，裡面可以填上你想要的內容。</p>
+        <div class="view overlay">
+          <img src="https://mdbootstrap.com/img/Photos/Others/forest-sm.jpg" class="img-fluid " alt="smaple image">
+          <div class="mask flex-center rgba-red-strong">
+              <p class="white-text">Strong overlay</p>
+          </div>
+        </div>
       </div>
       <div class="col-sm-3 col-xs-6">
-         <i class="glyphicon glyphicon-phone-alt"> </i>
-        <h4>Joomla! CMS建置</h4>
-        <p>這是一段範例的文字，裡面可以填上你想要的內容。這是一段範例的文字，裡面可以填上你想要的內容。</p>
+        <div class="view overlay">
+          <img src="https://mdbootstrap.com/img/Photos/Others/forest-sm.jpg" class="img-fluid " alt="smaple image">
+          <div class="mask flex-center rgba-red-strong">
+              <p class="white-text">Strong overlay</p>
+          </div>
+        </div>
       </div>
       <div class="col-sm-3 col-xs-6">
-        <i class="glyphicon glyphicon-bullhorn"> </i>
-        <h4>Facebook行銷</h4>
-        <p>這是一段範例的文字，裡面可以填上你想要的內容。這是一段範例的文字，裡面可以填上你想要的內容。</p>
+        <div class="view overlay">
+          <img src="https://mdbootstrap.com/img/Photos/Others/forest-sm.jpg" class="img-fluid " alt="smaple image">
+          <div class="mask flex-center rgba-red-strong">
+              <p class="white-text">Strong overlay</p>
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -110,26 +135,107 @@
 <!-- 第4個區塊：最新資訊 -->
 <div id="info" class="top-bottom-pad">
   <div class="container">
-    <div class="row">
-      <div class="col-sm-6">
-        <div class="panel panel-default">
-          <div class="panel-heading">
-            <h2 class="panel-title">寒流報到注意保暖</h2>
-          </div>
-          <div class="panel-body lead">
-            氣象局表示，今天持續受寒流影響，清晨本島平地最低溫在淡水九點七度，北部及東北部氣溫仍然偏低，氣象局也發布低溫特報，今天到明天清晨，台南以北及宜蘭沿海空曠地區、金、馬等地，都將出現攝氏十度左右的低溫，民眾要注意保暖，農、漁業要嚴防寒害。(中廣新聞網)
-          </div>
-        </div>
-      </div>
-      <div class="col-sm-6">
-        <div class="panel panel-default">
-          <div class="panel-heading">
-            <h2 class="panel-title">2016年新北市平溪天燈節</h2>
-          </div>
-          <div class="panel-body lead">
-            情人節到平溪放天燈! 「2016年新北市平溪天燈節」第二場活動「心心相印 情定平溪」祈福燈會今(14)日在平溪國中浪漫登場。繼2月11日第一場活動「童趣天燈 指在菁桐」得到熱烈迴響之後，今日重頭戲高達6公尺、約兩層樓高的20呎「心心相印天燈」，由馬英九總統及新北市侯友宜副市長共同施放。(新北市政府觀光旅遊局新聞稿)
-          </div>
-        </div>
+    <div style="background-color: rgba(255, 255, 255, 0.9);" class="p-4 my-4">
+    <div class="row p-4 my-4">
+      <td align="left" valign="top" bgcolor="#FFFFFF" class="main_font13"><p>一、個人部分</p>
+            <table width="100%" border="1" cellpadding="5" cellspacing="0">
+              <tbody><tr>
+                <th width="20%" colspan="3">項目</th>
+                <th width="80%">內容</th>
+              </tr>
+              <tr>
+                <th colspan="3" align="center">課稅範圍<br>
+                  （含日出條款）</th>
+                <td>◎出售房屋、房屋及其坐落基地或依法得核發建造執照之土地。<br>
+                  ◎105年1月1日起交易下列房屋、土地者：<br>
+                  <ul>
+                    <li>105年1月1日以後取得</li>
+                    <li>103年1月1日之次日以後取得，且持有期間在2年以內(繼承、受遺贈取得或受贈自配偶者，得將被繼承人、遺贈人或配偶持有期間合併計算)</li>
+                    <li>105年1月1日起取得以設定地上權方式之房屋使用權，其交易視同房屋交易</li>
+                  </ul></td>
+              </tr>
+              <tr>
+                <th colspan="3" align="center">課稅稅基</th>
+                <td>房地收入－成本－費用－依土地稅法計算之土地漲價總數額</td>
+              </tr>
+              <tr>
+                <th rowspan="5" align="center">課稅稅率</th>
+                <th colspan="2" align="center">境內居住者</th>
+                <td><ol>
+                    <li>持有1年以內：45%、持有2年以內超過1年：35%、持有10年以內超過2年：20%、持有超過10年：15%</li>
+                    <li>因財政部公告之調職、非自願離職或其他非自願性因素，交易持有期間在2年以下之房屋、土地及個人以自有土地與營利事業合作興建房屋，自土地取得之日起算2年內完成並銷售該房屋、土地：20%</li>
+                  </ol></td>
+              </tr>
+              <tr>
+                <th colspan="2" align="center">非境內居住者</th>
+                <td><ol>
+                    <li>持有1年以內：45%</li>
+                    <li>持有超過1年：35%</li>
+                  </ol></td>
+              </tr>
+              <tr>
+                <th rowspan="2" align="center">境內居住者自住房地</th>
+                <th align="center">減免</th>
+                <td><ol>
+                    <li>個人或其配偶、未成年子女設有戶籍；持有並實際居住連續滿6年且無供營業使用或出租</li>
+                    <li>按前開課稅稅基(即課稅所得)計算在4百萬元以下免稅；超過4百萬元部分，按10%稅率課徵</li>
+                    <li>6年內以1次為限</li>
+                  </ol></td>
+              </tr>
+              <tr>
+                <th align="center">重購退稅</th>
+                <td><ul>
+                    <li>換大屋：全額退稅(與現制同)</li>
+                    <li>換小屋：比例退稅</li>
+                    <li>重購後5年內不得改作其他用途或再行移轉</li>
+                  </ul></td>
+              </tr>
+              <tr>
+                <td colspan="3">繼承、受遺贈取得或受贈自配偶者，得將被繼承人、遺贈人或配偶持有期間合併計算</td>
+              </tr>
+              <tr>
+                <th colspan="3" align="center">課稅方式</th>
+                <td>分離課稅，所有權完成移轉登記之次日起算30天內申報納稅</td>
+              </tr>
+              <tr>
+                <th colspan="3" align="center">稅收用途</th>
+                <td>課稅收入循預算程序用於住宅政策及長期照顧服務支出</td>
+              </tr>
+            </tbody></table>
+            <p>二、營利事業部分</p>
+            <table width="100%" border="1" cellpadding="5" cellspacing="0">
+              <tbody><tr>
+                <th width="20%" colspan="2">項目</th>
+                <th width="80%" colspan="2">內容</th>
+              </tr>
+              <tr>
+                <th colspan="2" align="center">課稅範圍及稅收用途</th>
+                <td colspan="2">與個人相同(設定地上權方式之房屋使用權除外)</td>
+              </tr>
+              <tr>
+                <th colspan="2" align="center">課稅稅基</th>
+                <td colspan="2">房地收入－成本－費用－依土地稅法計算之土地漲價總數額</td>
+              </tr>
+              <tr>
+                <th rowspan="3" align="center">課稅方式及稅率</th>
+                <th align="center">境內營利事業</th>
+                <td colspan="2">17%，併入年度營利事業所得額，於次年5月辦理結算申報</td>
+              </tr>
+              <tr>
+                <th rowspan="2" align="center">境外營利事業</th>
+                <td rowspan="2">依持有期間認定<br>
+                  <ol>
+                    <li>持有1年以內：45%</li>
+                    <li>持有超過1年：35%</li>
+                  </ol></td>
+                <td>境內有固定營業場所者：<br>
+                  分開計算稅額、合併報繳</td>
+              </tr>
+              <tr>
+                <td>境內無固定營業場所者：<br>
+                  代理申報納稅</td>
+              </tr>
+            </tbody></table></td>
       </div>
     </div>
   </div>
@@ -137,11 +243,48 @@
 <!-- 第4個區塊 -->
 
 <!-- 第5個區塊：連絡我們 -->
-<div id="contact">
-  <div id="gmap">
-    <img src="images/gmap.jpg" height="498">
+  <div id="contact" class="top-bottom-pad">
+      <div class="container">
+      <div class="bg-faded my-4">
+        <hr class="divider">
+        <h2 class="text-center text-lg text-uppercase my-0">聯絡
+          <strong>我們</strong>
+        </h2>
+        <hr class="divider">
+        <div class="row">
+          <div class="col-lg-8">
+            <div class="embed-responsive embed-responsive-16by9 map-container mb-4 mb-lg-0">
+              <iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4895.044083193471!2d121.5793411176754!3d25.048855471802206!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442ab9e0adeb481%3A0x3f0ef638faff296a!2z5L2z5r6E5Zyw5pS_5aOr5LqL5YuZ5omA!5e0!3m2!1szh-TW!2stw!4v1520490530556"></iframe>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <h5 class="mb-0">Telphone:</h5>
+            <div class="mb-4">(02)2786-4980</div>
+            <h5 class="mb-0">Fax:</h5>
+            <div class="mb-4">(02)2785-6027</div>
+            <h5 class="mb-0">Email:</h5>
+            <div class="mb-4">
+              <a href="mailto:michellechi@hotmail.com.tw">michellechi@hotmail.com.tw</a>
+            </div>
+            <h5 class="mb-0">Address:</h5>
+            <div class="mb-4">
+              115 台北市南港區玉成街40號5樓
+              <br>
+              (南港運動中心對面)
+            </div>
+            <h5 class="mb-0">交通方式:</h5>
+            <div class="mb-4" >
+              <span style="color:blue;">後山埤4號出口</span>
+              <br>
+              <span style="color:green;">松山車站東出口</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
-</div>
+
+
 <!-- 第5個區塊 -->
 
 <!-- 頁腳(footer) -->
@@ -161,7 +304,7 @@
 
 </body>
 
-<!--underline-->
+<!--underline
 <script>
   var getPosition = function(){
     var currentLink = $(".nav-color.nav-active");
@@ -206,7 +349,7 @@
     });
   });
 </script>
-
+-->
 <!--navbar color change-->
 
 </html>
