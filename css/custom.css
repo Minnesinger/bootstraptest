@@ -158,6 +158,16 @@ img {
   -webkit-justify-content: center;
   -webkit-align-items: center;
 }
+/* 第三區塊邊界 */
+.p-5 {
+  padding: 1.5rem !important;
+}
+.my-5 {
+  margin-top: 5rem !important;
+}
+.my-5 {
+  margin-bottom: 5rem !important;
+}
 
 /* 第4個區塊用 */
 #info {
