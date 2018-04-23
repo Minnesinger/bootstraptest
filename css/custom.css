@@ -145,6 +145,11 @@ img {
     background-attachment: fixed;
 }
 
+.white-text {
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 1;
+}
 .rgba-red-strong {
     background-color: rgba(244,67,54,.7);
 }
